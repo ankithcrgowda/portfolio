@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Designed By Ankith Gowda -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankith CR - Portfolio</title>
+    <!--Tab Icon-->
+    <link rel="icon" href="./images/LOGO_AG.png" type="image/x-icon" />
+
+    <!--Include Bootstrap Dist-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+
+    <!-- Link Google Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="./node_modules/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="./node_modules/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+    <!--Header- Navigation bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top fixed navbar-light bg-body-primary" data-aos="slide-down" data-aos-delay="100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="./images/LOGO_AG.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">EDUCATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://shorturl.at/eruZ7" target="_blank">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <!-- In the navbar -->
+                    <span class="navbar-text theme-switch">
+                        <img src="./images/icons/light theme.png" alt="icon-light_theme" id="light-theme"
+                            width="40px" />
+                        <img src="./images/icons/dark theme.png" alt="icon-dark_theme" id="dark-theme" width="25px" />
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Navigation bar -->
+
+    <main>
+        <!-- Hero section (Landing Page) -->
+        <section id="home" class="py-6">
+            <div class="container-lg">
+                <div class="row align-items-center">
+                    <div class="col-md-6 px-md-5" data-aos="zoom-in-left" data-aos-delay="100">
+                        <img src="./images/Programmer 1.png" alt="programmer-img" class="img-fluid"
+                            style="width: auto" />
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in-right" data-aos-delay="100">
+                        <div class="text-left px-md-5">
+                            <h1 class="mb-4">I am <span>Ankith C R</span></h1>
+                            <p class="mb-4">
+                                I'm into
+                                <span class="typed"
+                                    data-typed-items="Web Development, Game Development, UI/UX Design, Graphic Design"></span>
+                            </p>
+                            <div id="media-links" class="d-flex mb-4">
+                                <a href="https://www.linkedin.com/in/ankithcr" class="linkedin icon-large"
+                                    target="_blank"><i class="bi-linkedin"></i></a>
+                                <a href="https://www.github.com/ankith-gowda" class="github icon-large"
+                                    target="_blank"><i class="bi-github"></i></a>
+                                <a href="https://www.instagram.com/_ankith.gowda" class="instagram icon-large"
+                                    target="_blank"><i class="bi-instagram"></i></a>
+                                <a href="https://discord.com/channels/ankith_gowda" class="discord icon-large"
+                                    target="_blank"><i class="bi-discord"></i></a>
+                            </div>
+                            <button onClick="window.location.href='./images/Resume/AnkithCR_Resume.pdf'" id="Btn-cv"
+                                type="button" class="btn btn-outline-primary btn-lg">
+                                Download Resume >>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of the Hero Section -->
+
+
+        <!-- About section -->
+        <section id="about" class="py-5">
+            <div class="container-xl">
+                <h1 class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    About
+                    <hr />
+                </h1>
+                <div class="row align-items-center">
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="./images/Photo.png" alt="Owner-photo" class="img-fluid rounded" width="100%" />
+                    </div>
+                    <div class="col-md-8" data-aos="zoom-in" data-aos-delay="100">
+                        <p class="text-justify">
+                            Hello, I'm <strong>Ankith C R</strong>, currently studying
+                            Information Science and Engineering at Rajeev Institute of
+                            Technology, Hassan. My academic journey shows a strong
+                            commitment, with a commendable CGPA of 7.68. I'm passionate
+                            about creating smooth digital experiences, as seen in projects
+                            like the
+                            <strong>"Online Restaurant Management System"</strong> and my
+                            ongoing work on
+                            <strong>"Indoor Navigation using Augmented Reality."</strong>
+                            Through valuable internships in various tech areas, including
+                            <strong>Full Stack Web Development</strong> with Varcon
+                            Technologies, I've strengthened my skills. As an Associate
+                            Trainer, I've had the privilege of guiding students in 3D game
+                            development. Notable achievements include securing the 2nd place
+                            in the <strong>"UI/UX Design Hackathon"</strong> and earning a
+                            Consolation-I certificate from ISRO, confirming my dedication to
+                            innovative solutions. My enthusiasm for technology drives my
+                            eagerness to contribute creativity and proficiency to future
+                            endeavors. Currently, I'm focusing on
+                            <strong>Game development and AR/VR with Unity and C#</strong>,
+                            with the aim of enhancing my skills and making meaningful
+                            contributions to the tech industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of About Section -->
+
+        <!-- PROJECTS section -->
+        <section id="project">
+            <div class="container-xl">
+                <h1 class="text-center" data-aos="zoom-in" data-aos-delay="100">Projects
+                    <hr>
+                </h1>
+                <div class="row">
+                    <div class="custom-card col-md-4" data-aos="fade-in-up-big" data-aos-delay="100">
+                        <!-- Project 1 Content -->
+                        <div class="img-box"><img src="./images/Projects/IndNav_AR.png"></div>
+                        <div class="custom-content">
+                            <h2>Indoor Navigation using Augmented Reality</h2>
+                            <p>An Augmented Reality-based mobile application built with Unity Engine and C#,
+                                utilizing Google ARCore. It enables offline navigation by showcasing a path from
+                                source to destination without requiring an internet connection.</p>
+                            <a href="#">Coming soon...</a>
+                        </div>
+                    </div>
+                    <div class="custom-card col-md-4" data-aos="fade-in-up-big" data-aos-delay="100">
+                        <!-- Project 2 Content -->
+                        <div class="img-box"><img src="./images/Projects/FSWD.png"></div>
+                        <div class="custom-content">
+                            <h2>Online Restaurant Management System</h2>
+                            <p>A responsive Online Restaurant Management System designed for seamless menu browsing,
+                                easy order placement, and efficient reservation management using HTML, CSS, and
+                                JavaScript.</p>
+                            <a href="https://github.com/ankith-gowda/online-resturant-management-system"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="custom-card col-md-4" data-aos="fade-in-up-big" data-aos-delay="100">
+                        <!-- Project 3 Content -->
+                        <div class="img-box"><img src="./images/Projects/Footsfit.png"></div>
+                        <div class="custom-content">
+                            <h2>FootsFit - Online Shoe Shopping Website</h2>
+                            <p>User interface prototype designed to enhance the online shoe shopping experience,
+                                focusing on seamless navigation and showcasing a variety of styles and trends.</p>
+                            <a href="https://shorturl.at/dxGLS" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Projects Section -->
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5">
+            <div class="container-xl">
+                <h1 class="text-center" data-aos="zoom-in" data-aos-delay="100">Skills
+                    <hr>
+                </h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Tools -->
+                        <div class="col-md-12 mt-4 icon-box" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <h3>Tools
+                                <hr>
+                            </h3>
+                            <p class="text-left">
+                                <img src="./images/icons/Skills/unity.png" alt="unity-icon" width="200px">
+                                <img src="./images/icons/Skills/AdobePhotoshop.png" alt="photoshop-icon" width="250px">
+                                <img src="./images/icons/Skills/Figma-logo.png" alt="figma-icon" width="150px">
+                                <img src="./images/icons/Skills/Git-logo.png" alt="Git-icon" width="150px">
+                                <img src="./images/icons/Skills/Jupyter.png" alt="jupyter-icon" width="100px">
+                            </p>
+                        </div>
+
+                        <!-- Languages -->
+                        <div class="col-md-12 mt-4 icon-box" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <h3>Languages
+                                <hr>
+                            </h3>
+                            <p class="text-left">
+                                <img src="./images/icons/Skills/CSharp.png" alt="C#-icon" width="90px">
+                                <img src="./images/icons/Skills/HTML5.png" alt="HTML-icon" width="100px">
+                                <img src="./images/icons/Skills/CSS3.png" alt="CSS-icon" width="70px">
+                                <img src="./images/icons/Skills/Javascript.png" alt="JavaScript-icon" width="100px">
+                                <img src="./images/icons/Skills/Java.png" alt="Java-icon" width="100px">
+                                <img src="./images/icons/Skills/Python.png" alt="Python-icon" width="100px">
+                            </p>
+                        </div>
+
+                        <!-- Framework and Database -->
+                        <div class="col-md-12 mt-4 icon-box" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <h3>Framework and Database
+                                <hr>
+                            </h3>
+                            <p class="text-left">
+                                <img src="./images/icons/Skills/Bootstrap.png" alt="bootstrap-icon" width="90px">
+                                <img src="./images/icons/Skills/MySql.png" alt="MySql" width="150px">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Skills Section -->
+
+        <!-- Education Section -->
+        <section id="education" class="py-5">
+            <div class="container-xl">
+                <h1 class="text-center" data-aos="zoom-in" data-aos-delay="100">Education
+                    <hr>
+                </h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <img src="./images/Education/RIT_logo_original.png" class="card-img-top" alt="RIT Logo">
+                            <div class="card-body">
+                                <hr>
+                                <h5 class="card-title">B.E in Information Science & Engineering</h5>
+                                <h4 class="card-title">Rajeev Institute of Technology, Hassan</h4>
+                                <p class="card-text"><strong>2020 - Present</strong></p>
+                                <p class="card-text">CGPA: 7.68/10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <img src="./images/Education/BGS hassan.png" class="card-img-top" alt="BGS Logo">
+                            <div class="card-body">
+                                <hr>
+                                <h5 class="card-title">12th - Science</h5>
+                                <h6 class="card-title" style="color:white">12th - Science</h6>
+                                <h4 class="card-title">BGS PU Science College, Hassan</h4>
+                                <p class="card-text"><strong>2018 - 2020</strong></p>
+                                <p class="card-text">Grade: 84.1%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" data-aos="fade-in-up-big" data-aos-delay="100">
+                            <img src="./images/Education/aces.png" class="card-img-top" alt="ACES Logo">
+                            <div class="card-body">
+                                <hr>
+                                <h5 class="card-title">10th - High School</h5>
+                                <h6 class="card-title" style="color: white;">10th - High School</h6>
+                                <h4 class="card-title">Sri Adichunchanagiri English School, Hassan</h4>
+                                <p class="card-text"><strong>2012 - 2018</strong></p>
+                                <p class="card-text">Grade: 92%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Education Section -->
+    </main>
+
+    <!-- Footer -->
+    <footer data-aos="slide-up" data-aos-delay="100">
+        <div class="container-fluid" id="contact">
+            <div class="row py-4">
+                <div class="row">
+                    <!-- Logo Column -->
+                    <div class="col-md-3">
+                        <a href="#home" class="footer-logo">
+                            <img src="./images/LOGO_AG_inverted.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- Address Column -->
+                    <div class="col-md-3">
+                        <h6><i class="bi-geo-alt-fill"></i> &nbsp; Address</h6>
+                        <p>s/o Ramesh <br>
+                            Chittanahalli, Doddapura(P)<br>
+                            Hassan (T) & (D)<br>
+                            Karnataka, India - 573201</p>
+                    </div>
+                    <!-- Follow Me Column -->
+                    <div class="col-md-3">
+                        <h6>Follow me on,</h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ankithcr"
+                                    target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.github.com/ankith-gowda"
+                                    target="_blank"><i class="bi bi-github"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/_ankith.gowda"
+                                    target="_blank"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://discord.com/channels/ankith_gowda"
+                                    target="_blank"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Me Column -->
+                    <div class="col-md-3 column-3">
+                        <h6>Contact me,</h6>
+                        <p><i class="bi bi-phone"></i>&nbsp;<a href="tel:+917899474232"
+                                style="text-decoration: none; color: white;"> +91 7899474232</a></p>
+                        <p><em><strong>Personal</strong></em><br><a href="mailto:ankithcr13@gmail.com"
+                                style="text-decoration: none; color: white;">ankithcr13@gmail.com</a></p>
+                        <p><em><strong>Work</strong></em><br><a href="mailto:4ra20is002@rithassan.ac.in"
+                                style="text-decoration: none; color: white;">4ra20is003@rithassan.ac.in</a></p>
+                    </div>
+                </div>
+                <hr class="horizontal-line">
+                <!-- Copyright -->
+                <p class="text-center copyright">&copy; 2023. Designed with ❤ by <em>Ankith C R Gowda</em></p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- SVG Preloader -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="100%" height="auto"
+        style="background-color: rgb(255, 255, 255); position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 1002; animation: preloaderAnimation 5s linear forwards;">
+        <text x="50%" y="50%" font-family="'Oxanium', sans-serif" font-size="10" fill="rgb(56, 56, 56)"
+            text-anchor="middle">
+            <tspan class="preloader">0 0 0 0</tspan>
+        </text>
+        <style>
+            @keyframes preloaderAnimation {
+                0% {
+                    visibility: visible;
+                }
+
+                100% {
+                    visibility: hidden;
+                }
+            }
+        </style>
+    </svg>
+
+
+    <!-- Import JS vendors -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Import local JS scripts -->
+    <script src="./src/script.js"></script>
+    <script src="./src/themeSwitch.js"></script>
+    <script src="./src/preLoader.js"></script>
+</body>
+
+</html>

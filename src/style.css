@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*For better box model */
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+/* For Navigation Bar */
+header {
+    width: 100%;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+    padding: 0 10%;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #333333;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #FF3A3A;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF3A3A;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar ul li a {
+    font-weight: 300;
+}
+
+/* ... Other styles ... */
+
+
+
+/* Home Section */
+#home {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    margin: 0 10px;
+}
+
+h1 span {
+    font-size: 3rem;
+}
+
+#home p,
+#home p span {
+    font-size: 1.3em;
+}
+
+.text-left {
+    margin: 1rem;
+}
+
+span {
+    color: #FF3A3A;
+    font-weight: 700;
+}
+
+#home #media-links a {
+    margin-right: 1em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 66, 66, 0.425);
+    border-radius: 50%;
+    font-size: 1.25em;
+    width: 40px;
+    height: 40px;
+}
+
+#home #media-links a:hover {
+    transform: scale(1.15);
+    background-color: #FF3A3A;
+    cursor: pointer;
+}
+
+#Btn-cv {
+    margin-top: 1.1em;
+    border-radius: 0;
+    border-color: #FF3A3A;
+    color: #FF3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#Btn-cv:hover {
+    background-color: #FF3A3A;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+/* End of Hero Section */
+
+/* About Section */
+#about {
+    padding: 5rem 0;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+#about strong {
+    font-weight: bold;
+}
+
+/* End of About Section */
+
+
+/* PROJECTS section */
+#project {
+    padding: 100px;
+    margin: 0 100px;
+}
+
+.container-xl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 0px 0px; */
+    padding: 50px 0px;
+}
+
+.container-xl .custom-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container-xl .custom-card:hover {
+    height: 415px;
+}
+
+.container-xl .custom-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 260px;
+    height: 180px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-xl .custom-card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container-xl .custom-card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-xl .custom-card .custom-content {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-xl .custom-card:hover .custom-content {
+    top: 100px;
+    height: 330px;
+}
+
+.container-xl .custom-card .custom-content h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.container-xl .custom-card .custom-content p {
+    color: #333;
+}
+
+.container-xl .custom-card .custom-content a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 10px 23px;
+    text-decoration: none;
+    border: 2px solid #FF3A3A;
+    background: none;
+    color: black;
+    font-weight: 500;
+}
+
+.container-xl .custom-card .custom-content a:hover {
+    background-color: #FF3A3A;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .container-xl .custom-card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container-xl .custom-card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container-xl .custom-card .custom-content p {
+        font-size: 0.8rem;
+    }
+
+    .container-xl .custom-card .custom-content a {
+        font-size: 0.9rem;
+    }
+}
+
+/* End of Projects Section */
+
+
+/* Skills Section */
+#skills {
+    margin-top: 5rem;
+}
+
+.icon-box {
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.432));
+}
+
+.icon-box h3 {
+    text-align: center;
+}
+
+body.dark-theme #skills h3 {
+    color: #1d1d1d;
+}
+
+.icon-box p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.icon-box img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* End of Skills Section */
+
+/* Education Section */
+#education {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.384));
+    transition: transform ease-in-out 0.25s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly increase the scale on hover */
+}
+
+.card img {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    /* Rounded top corners for images */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card hr {
+    margin-top: 0.5rem;
+}
+
+.card h5 {
+    font-weight: 500;
+}
+
+.card h4 {
+    font-weight: 700;
+}
+
+/* End of Education Section */
+
+
+/* Footer Styles */
+footer {
+    color: #e6e6e6;
+    background-color: #000;
+    font-weight: 100;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#contact h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#contact ul li {
+    margin-right: 1rem;
+}
+
+#contact ul li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.horizontal-line {
+    margin: 2rem 0;
+    border: 1px solid white;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+/* End of Footer Styles */
+
+
+body.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+
+/* Theme switch */
+.theme-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    /* border: 0.5px solid black;
+    border-radius: 25px;
+    max-width: 25%; */
+}
+
+/* .theme-switch:active {
+    background-color: #FF3A3A;
+} */
+
+.theme-switch img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.theme-switch img:hover {
+    filter: brightness(10);
+    color: #FF3A3A;
+}
