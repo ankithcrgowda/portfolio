@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     /*For better box model */
+    overflow: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body {
@@ -11,13 +17,13 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     margin-top: 60px;
-    overflow: auto;
-    scrollbar-width: none;
+/*     overflow: auto;
+    scrollbar-width: none; */
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* For Navigation Bar */
 header {
