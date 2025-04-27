@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     /*For better box model */
-/*     overflow: auto;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-        display: none;
-    } */
 }
 
 body {
@@ -17,13 +11,9 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     margin-top: 60px;
-/*     overflow: auto;
-    scrollbar-width: none; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
-/* body::-webkit-scrollbar {
-    display: none;
-} */
 
 /* For Navigation Bar */
 header {
@@ -177,18 +167,18 @@ span {
 
 /* PROJECTS section */
 #project {
-    padding: 100px;
-    margin: 0 100px;
+    padding: 50px 15px; /* Reduced padding for smaller screens initially */
+    margin: 0; /* Remove horizontal margin */
 }
 
 .container-xl {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    /* display: flex; */ /* Let Bootstrap handle flex */
+    /* justify-content: center; */ /* Let Bootstrap handle alignment */
+    /* align-items: center; */ /* Let Bootstrap handle alignment */
+    /* flex-wrap: wrap; */ /* Let Bootstrap handle wrapping */
     /* gap: 0px 0px; */
-    padding: 50px 0px;
+    padding: 25px 0px; /* Reduced padding */
 }
 
 .container-xl .custom-card {
@@ -196,12 +186,12 @@ span {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 300px;
-    max-width: 100%;
+    /* width: 300px; */ /* Remove fixed width, rely on Bootstrap grid */
+    max-width: 25%;
     height: 300px;
     background: #fff;
-    margin: 5px;
-    border-radius: 20px;
+    margin: 10px;
+    border-radius: 25px;
     transition: 0.5s;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
@@ -479,4 +469,199 @@ body.dark-theme {
 .theme-switch img:hover {
     filter: brightness(10);
     color: #FF3A3A;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container-fluid {
+        padding: 0 5%; /* Adjust container padding */
+    }
+
+    #home {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin: 0 5px;
+    }
+
+    #home h1 span {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    #home p,
+    #home p span {
+        font-size: 1.1em; /* Adjust font size */
+    }
+
+    #about {
+        padding: 3rem 0;
+    }
+
+    #about p {
+        font-size: 1.1rem;
+    }
+
+    #project {
+        padding: 40px 10px;
+        margin: 0;
+    }
+
+    .container-xl {
+        padding: 20px 0px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    body {
+        margin-top: 50px; /* Adjust for smaller navbar */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center nav items when collapsed */
+    }
+
+    .container-fluid {
+        padding: 0 15px; /* Further adjust container padding */
+    }
+
+    #home {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center; /* Center text content */
+    }
+
+    #home .text-left {
+        margin: 0;
+        padding: 0 15px; /* Add padding for centered text */
+    }
+
+    #home #media-links {
+        justify-content: center; /* Center social media icons */
+    }
+
+    #home h1 span {
+        font-size: 2rem;
+    }
+
+    #home p,
+    #home p span {
+        font-size: 1em;
+    }
+
+    #about {
+        padding: 2rem 0;
+    }
+
+    #about .row {
+        text-align: center; /* Center about content */
+    }
+
+    #about img {
+        margin-bottom: 1rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+        text-align: justify; /* Keep text justified */
+    }
+
+    #project {
+        padding: 30px 5px;
+    }
+
+    .container-xl {
+        padding: 15px 0px;
+    }
+
+    .custom-card {
+        margin-bottom: 30px; /* Add space between stacked cards */
+    }
+
+    #skills .skill-item {
+        width: calc(50% - 20px); /* Two columns on small screens */
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-links,
+    footer .social-links {
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #home h1 span {
+        font-size: 1.8rem;
+    }
+
+    #skills .skill-item {
+        width: calc(100% - 20px); /* Single column on extra small screens */
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .navbar {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .nav-link {
+    color: #ffffff;
+}
+
+body.dark-theme .nav-link:hover {
+    color: #FF3A3A;
+}
+
+body.dark-theme .icon-box {
+    background-color: #2d2d2d;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
+}
+
+body.dark-theme .card {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-theme .container-xl .custom-card {
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .container-xl .custom-card .custom-content h2,
+body.dark-theme .container-xl .custom-card .custom-content p {
+    color: #ffffff;
+}
+
+body.dark-theme .container-xl .custom-card .custom-content a {
+    color: #ffffff;
+    border-color: #FF3A3A;
+}
+
+body.dark-theme .container-xl .custom-card .custom-content a:hover {
+    background-color: #FF3A3A;
+    color: #ffffff;
+}
+
+body.dark-theme #skills h3 {
+    color: #ffffff;
 }

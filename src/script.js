@@ -57,5 +57,5 @@
 
   // Call the function to update active state based on scroll position
   window.addEventListener("load", navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+  window.addEventListener("scroll", navbarlinksActive);
 })();
