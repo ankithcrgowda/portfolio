@@ -33,9 +33,9 @@
   // Initialize Typed.js
   new Typed(".typed", {
     strings: [
-      "Web Development",
-      "Game Development",
-      "UI/UX Design",
+      "Technical Trainer",
+      "Software Developer",
+      "AR/VR Enthusiast",
       "Graphic Design",
     ],
     loop: true,
