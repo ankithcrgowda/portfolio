@@ -10,7 +10,7 @@ function startPreloader() {
     const binaryMatrix = ["0 0 0 0", "1 0 0 0", "1 1 0 0", "1 1 1 0", "1 1 1 1"];
     
     let currentStep = 0;
-    const duration = 3000; // Reduced to 3 seconds for better UX
+    const duration = 5000; // Reduced to 3 seconds for better UX
     const steps = Math.floor(duration / 250); // Show 4 updates per second
     
     function updatePreloader() {
@@ -34,6 +34,6 @@ function startPreloader() {
         // Remove preloader after fade
         setTimeout(() => {
             preloaderContainer.style.display = 'none';
-        }, 2000);
+        }, 1000);
     }, duration);
 }

@@ -210,17 +210,16 @@ span {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    /* margin: -23rem 0; */
 }
 
 .about-image-container img {
     transition: var(--transition-normal);
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(1.2);
 }
 
 .about-image-container:hover img {
     transform: scale(1.05);
-    filter: grayscale(50%);
+    filter: grayscale(50%) brightness(1.2);
 }
 
 .greeting {
@@ -646,8 +645,8 @@ footer {
 }
 
 .theme-switch button:hover {
-    /* transform: translate(-50%, -50%) scale(1.1); */
-    transform: rotate(180deg);
+    transform: translate(-50%, -50%) scale(1.1);
+    /* transform: rotate(1deg); */
 }
 
 body.dark-theme #light-theme {
