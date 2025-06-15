@@ -59,12 +59,14 @@
                             <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
-                    <!-- In the navbar -->
-                    <span class="navbar-text theme-switch">
-                        <img src="./images/icons/light theme.png" alt="icon-light_theme" id="light-theme"
-                            width="40px" />
-                        <img src="./images/icons/dark theme.png" alt="icon-dark_theme" id="dark-theme" width="25px" />
-                    </span>
+                    <!-- In the navbar -->                    <div class="navbar-text theme-switch">
+                        <button id="light-theme" class="btn btn-md" aria-label="Switch to Light Theme">
+                            <span>🌞</span>
+                        </button>
+                        <button id="dark-theme" class="btn btn-md" aria-label="Switch to Dark Theme">
+                            <span>🌙</span>
+                        </button>
+                    </div>
 
                 </div>
             </div>
@@ -98,58 +100,91 @@
                                 <a href="https://discord.com/channels/ankith_gowda" class="discord icon-large"
                                     target="_blank"><i class="bi-discord"></i></a>
                             </div>
-                            <!-- <button onClick="window.location.href='./images/Resume/AnkithCR_Resume.pdf'" id="Btn-cv"
-                                type="button" class="btn btn-outline-primary btn-lg">
-                                Download Resume >>
-                            </button> -->
-                            <button onClick="window.location.href='https://youtu.be/dQw4w9WgXcQ?si=hvZEsveH76SagIsB'" id="Btn-cv"
+                            <button onClick="window.location.href='./images/Resume/AnkithCR_Resume.pdf'" id="Btn-cv"
                                 type="button" class="btn btn-outline-primary btn-lg">
                                 Download Resume >>
                             </button>
+                            <!-- <button onClick="window.location.href='https://youtu.be/dQw4w9WgXcQ?si=hvZEsveH76SagIsB'" id="Btn-cv"
+                                type="button" class="btn btn-outline-primary btn-lg">
+                                Download Resume >>
+                            </button> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End of the Hero Section -->
-
-
+        <!-- End of the Hero Section -->        
+         
         <!-- About section -->
         <section id="about" class="py-5">
             <div class="container-xl">
-                <h1 class="text-center" data-aos="zoom-in" data-aos-delay="100">
-                    About
+                <h1 class="text-center mb-5" data-aos="zoom-in" data-aos-delay="100">
+                    About Me
                     <hr />
                 </h1>
                 <div class="row align-items-center">
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="./images/Photo.png" alt="Owner-photo" class="img-fluid rounded" width="100%" />
+                    <div class="col-md-4 mb-4 mb-md-0" data-aos="fade" data-aos-delay="100">
+                        <div class="about-image-container">
+                            <img src="./images/profile1.png" alt="Ankith C R" class="img-fluid rounded shadow-lg" />
+                        </div>
                     </div>
-                    <div class="col-md-8" data-aos="zoom-in" data-aos-delay="100">
-                        <p class="text-justify">
-                            Hello, I'm <strong>Ankith C R</strong>, currently studying
-                            Information Science and Engineering at Rajeev Institute of
-                            Technology, Hassan. My academic journey shows a strong
-                            commitment, with a commendable CGPA of 7.68. I'm passionate
-                            about creating smooth digital experiences, as seen in projects
-                            like the
-                            <strong>"Online Restaurant Management System"</strong> and my
-                            ongoing work on
-                            <strong>"Indoor Navigation using Augmented Reality."</strong>
-                            Through valuable internships in various tech areas, including
-                            <strong>Full Stack Web Development</strong> with Varcon
-                            Technologies, I've strengthened my skills. As an Associate
-                            Trainer, I've had the privilege of guiding students in 3D game
-                            development. Notable achievements include securing the 2nd place
-                            in the <strong>"UI/UX Design Hackathon"</strong> and earning a
-                            Consolation-I certificate from ISRO, confirming my dedication to
-                            innovative solutions. My enthusiasm for technology drives my
-                            eagerness to contribute creativity and proficiency to future
-                            endeavors. Currently, I'm focusing on
-                            <strong>Game development and AR/VR with Unity and C#</strong>,
-                            with the aim of enhancing my skills and making meaningful
-                            contributions to the tech industry.
-                        </p>
+                    <div class="col-md-8" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="about-content">
+                            <div class="greeting mb-4">
+                                <h2 class="hello-text">Hello, I'm <span>Ankith C R</span></h2>
+                                <h3 class="subtitle">Technical Trainer | AR/VR Enthusiast | Web Developer | Game Developer</h3>
+                            </div>
+                            
+                            <div class="info-grid">
+                                <div class="info-card" data-aos="zoom-in" data-aos-delay="600">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                    <h4>Experience</h4>
+                                    <ul class="experience-list">
+                                        <li>Technial Trainer . Tap Academy . 1yr . </li>
+                                        <li>Unity Assistant Trainer . RIT Hassan . 6mos</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="info-card" data-aos="zoom-in" data-aos-delay="400">
+                                    <i class="bi bi-award-fill"></i>
+                                    <h4>Achievements</h4>
+                                    <ul class="achievement-list">
+                                        <li>Runner Up in JVTM - 2024 (7500rs cash price)</li>
+                                        <li>ISRO Consolation-I Award (500rs cash price)</li>
+                                        <li>Runner Up in UI/UX Design Hackathon (3000rs cash price)</li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="info-card" data-aos="zoom-in" data-aos-delay="300">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                    <h4>Education</h4>
+                                    <p>Information Science & Engineering at Rajeev Institute of Technology, Hassan</p>
+                                    <span class="highlight">CGPA: 7.97</span>
+                                </div>
+                                
+                                
+                                <div class="info-card" data-aos="zoom-in" data-aos-delay="500">
+                                    <i class="bi bi-code-square"></i>
+                                    <h4>Current Focus</h4>
+                                    <ul class="focus-list">
+                                        <li>Training and Upskilling students</li>
+                                        <li>Java Full Stack Development</li>
+                                        <li>Game Development</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                            <div class="featured-projects mt-4" data-aos="fade-up" data-aos-delay="700">
+                                <h4>Featured Projects</h4>
+                                <div class="project-tags">
+                                    <span class="project-tag">ARcademy</span>
+                                    <span class="project-tag">Restaurant Management System</span>
+                                    <span class="project-tag">Footsfit - UI prototype for shoe website</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,11 +202,11 @@
                         <!-- Project 1 Content -->
                         <div class="img-box"><img src="./images/Projects/IndNav_AR.png"></div>
                         <div class="custom-content">
-                            <h2>Indoor Navigation using Augmented Reality</h2>
-                            <p>An Augmented Reality-based mobile application built with Unity Engine and C#,
-                                utilizing Google ARCore. It enables offline navigation by showcasing a path from
-                                source to destination without requiring an internet connection.</p>
-                            <a href="#">Coming soon...</a>
+                            <h2>ARcademy - Augmented Reality Based Encyclopaedia</h2>
+                            <p>ARcademy is a project aimed at creating an immersive augmented reality (AR) learning experience. 
+                                It leverages cutting-edge technologies to enhance education through interactive AR simulations
+                                 and visualizations.</p>
+                            <a href="https://github.com/ankithcrgowda/ARcademy" target="_blank">View Source</a>
                         </div>
                     </div>
                     <div class="custom-card col-md-4" data-aos="fade-in-up-big" data-aos-delay="100">
@@ -183,7 +218,7 @@
                                 easy order placement, and efficient reservation management using HTML, CSS, and
                                 JavaScript.</p>
                             <a href="https://github.com/ankith-gowda/online-resturant-management-system"
-                                target="_blank">View Project</a>
+                                target="_blank">View Source</a>
                         </div>
                     </div>
                     <div class="custom-card col-md-4" data-aos="fade-in-up-big" data-aos-delay="100">
@@ -193,7 +228,7 @@
                             <h2>FootsFit - Online Shoe Shopping Website</h2>
                             <p>User interface prototype designed to enhance the online shoe shopping experience,
                                 focusing on seamless navigation and showcasing a variety of styles and trends.</p>
-                            <a href="https://shorturl.at/dxGLS" target="_blank">View Project</a>
+                            <a href="https://shorturl.at/dxGLS" target="_blank">View Source</a>
                         </div>
                     </div>
                 </div>
@@ -306,25 +341,25 @@
     </main>
 
     <!-- Footer -->
-    <footer data-aos="slide-up" data-aos-delay="100">
+    <footer data-aos="fade-in-up-big" data-aos-delay="100">
         <div class="container-fluid" id="contact">
             <div class="row py-4">
                 <div class="row">
                     <!-- Logo Column -->
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <a href="#home" class="footer-logo">
                             <img src="./images/LOGO_AG_inverted.png" alt="logo">
                         </a>
-                    </div>
+                    </div> -->
                     <!-- Address Column -->
-                    <div class="col-md-3">
+                    <div class="col-md">
                         <h6><i class="bi-geo-alt-fill"></i> &nbsp; Address</h6>
                         <p> BTM Layout<br>
                             Bengaluru<br>
                             Karnataka, India - 560068</p>
                     </div>
                     <!-- Follow Me Column -->
-                    <div class="col-md-3">
+                    <div class="col-md">
                         <h6>Follow me on,</h6>
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="https://www.linkedin.com/in/ankithcr"
@@ -338,14 +373,14 @@
                         </ul>
                     </div>
                     <!-- Contact Me Column -->
-                    <div class="col-md-3 column-3">
+                    <div class="col-md">
                         <h6>Contact me,</h6>
                         <!-- <p><i class="bi bi-phone"></i>&nbsp;<a href="tel:+917899474232"
                                 style="text-decoration: none; color: white;"> +91 7899474232</a></p> -->
                         <p><strong>Personal</strong><br><a href="mailto:ankithcr13@gmail.com"
-                                style="text-decoration: none; color: white;">ankithcr13@gmail.com</a></p>
+                                style="text-decoration: none;">ankithcr13@gmail.com</a></p>
                         <p><strong>Work</strong><br><a href="mailto:ankith@thetapacademy.com"
-                                style="text-decoration: none; color: white;">ankith@thetapacademy.com</a></p>
+                                style="text-decoration: none;">ankith@thetapacademy.com</a></p>
                     </div>
                 </div>
                 <hr class="horizontal-line">
@@ -355,27 +390,17 @@
         </div>
     </footer>
     <!-- End of Footer -->
-
-
-    <!-- SVG Preloader -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="100%" height="50px"
-        style="background-color: rgb(255, 255, 255); position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 1002; animation: preloaderAnimation 5s linear forwards;">
-        <text x="50%" y="50%" font-family="'Oxanium', sans-serif" font-size="10" fill="rgb(56, 56, 56)"
-            text-anchor="middle">
-            <tspan class="preloader">0 0 0 0</tspan>
-        </text>
-        <style>
-            @keyframes preloaderAnimation {
-                0% {
-                    visibility: visible;
-                }
-
-                100% {
-                    visibility: hidden;
-                }
-            }
-        </style>
-    </svg>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+                <text x="50%" y="50%" font-family="'Oxanium', sans-serif" font-size="36" fill="var(--primary-color)"
+                    text-anchor="middle">
+                    <tspan class="preloader">0 0 0 0</tspan>
+                </text>
+            </svg>
+        </div>
+    </div>
 
 
     <!-- Import JS vendors -->
