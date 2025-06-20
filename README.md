@@ -3,7 +3,7 @@ My self built personal portfolio.
 
 <h2 align="center">
   Personal Portfolio<br/>
-  <a href="https://github.com/ankith-gwoda" target="_blank">Ankith C R</a>
+  <a href="https://github.com/ankithcrgowda" target="_blank">Ankith C R</a>
 </h2>
 <div align="center">
   <img alt="prototype" src="./Prototype/Snapshot.png" />
@@ -13,7 +13,7 @@ My self built personal portfolio.
 
 ## To Access
 You can modify this repo and make changes of your own.<br> 
-Just give me a proper credit by linking back to [ankith-gowda](https://github.com/ankith-gowda/Portfolio) or mention me.
+Just give me a proper credit by linking back to [ankithcrgowda](https://github.com/ankithcrgowda/portfolio) or mention me.
 Thank you!..
 
 ## Built with
@@ -25,13 +25,13 @@ Thank you!..
 ## Getting Started
 Clone this repo. Before that make sure *Git* installed globally in your device.<br>
 Open command prompt and execute,<br>
-'git clone https://github.com/ankith-gowda/Portfolio.git'
+'git clone https://github.com/ankithcrgowda/portfolio.git'
 After this, all you need to go to the directory where the project is cloned, and can edit.
 
 
 ### Show your Support🙏🏻
 Give a ⭐ if you like this project.
-Feedback are welcomed.
+Feedbacks are welcomed.
 
 ### You can also follow me on
 <div margin-left="10px">
@@ -47,5 +47,3 @@ Feedback are welcomed.
 </div>
 
 
-
-## Note: This is not a completed website. I'll update it accordingly.
