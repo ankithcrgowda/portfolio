@@ -6,12 +6,12 @@
     <title>Ankith C R - Resume</title>
     <link rel="stylesheet" href="./src/resume.css">
     <!-- PDF Generation Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
 </head>
 <body>
     <div id="download-btn">
-        <button id="btn" onclick="downloadPDF()">Download Resume</button>
+        <button id="btn" onclick="window.print()">Download Resume</button>
     </div> <br>
     <div class="container">
         <!-- Header -->
@@ -198,7 +198,7 @@
         </section>
     </div>
 
-    <script>
+    <!-- <script>
         async function downloadPDF() {
             const button = document.getElementById('download-btn');
             const container = document.querySelector('.container');
@@ -250,7 +250,7 @@
                 button.style.display = 'block';
             }
         }
-    </script>
+    </script -->
 </body>
 </html>
 
