@@ -364,7 +364,7 @@ span {
 }
 
 .container-xl .custom-card:hover {
-    height: 415px;
+    height: 450px;
     transform: translateY(-10px);
 }
 
@@ -406,7 +406,7 @@ span {
 
 .container-xl .custom-card:hover .custom-content {
     top: 130px;
-    height: 250px;
+    height: 300px;
 }
 
 .container-xl .custom-card .custom-content h2 {
