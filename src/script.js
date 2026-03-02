@@ -33,10 +33,9 @@
   // Initialize Typed.js
   new Typed(".typed", {
     strings: [
+      "Java Full Stack Web Developer",
       "Technical Trainer",
-      "Software Developer",
       "AR/VR Enthusiast",
-      "Graphic Design",
     ],
     loop: true,
     typeSpeed: 100,
